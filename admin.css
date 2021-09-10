@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+aside {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 16vw;
+  height: 100vw;
+  z-index: 100;
+  background-color: rgb(42, 80, 80);
+  color: white;
+  border-right: 2px solid gray;
+}
+aside ul {
+  margin: 0 auto;
+}
+aside li {
+  padding: 1em 0em;
+}
+nav {
+  background-color: white;
+}
+nav input {
+  padding: 0.9em;
+  margin-left: 1em;
+  width: 280px;
+  background-color: rgb(244, 244, 244);
+  height: 35px;
+
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+nav ul {
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+}
+li {
+  list-style: none;
+  margin: 0em 0.4em;
+}
+.m-right {
+  margin-left: auto;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0px;
+  left: 16vw;
+  background-color: rgb(244, 244, 244);
+}
+table {
+  border-collapse: collapse;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+.intro {
+  background-color: white;
+  padding: 1.6em 2.5em;
+  margin-top: 1em;
+}
+.intro h2 {
+  margin-bottom: 1.8em;
+  cursor: pointer;
+}
+.settings i {
+  margin-right: 2.3em;
+  color: gray;
+  cursor: pointer;
+}
+.bell-icon i {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  color: gray;
+  cursor: pointer;
+}
+.admin-name {
+  font-size: 1.13em;
+  margin-right: 1em;
+  font-weight: normal;
+  cursor: pointer;
+}
+.avatar-img img {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+table button {
+  font-size: 0.81em;
+  color: white;
+  background-color: rgb(42, 80, 80);
+  outline: none;
+  border: none;
+  padding: 0.2em 0.5em;
+  border-radius: 30px;
+}
+
+thead {
+  background-color: rgb(244, 244, 244);
+}
+
+th,
+td {
+  padding: 1.4em;
+  text-align: start;
+}
+
+td {
+  border-bottom: rgb(244, 244, 244);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-holder {
+  display: flex;
+  justify-content: space-between;
+  border-left: 13px solid rgb(42, 80, 80);
+  width: 250px;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px 40px;
+  height: 60px;
+  box-shadow: 2px 1px 1px solid rgba(0, 0, 0, 0.5);
+}
+.card-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 0.8rem;
+  }
+  aside {
+    display: none;
+  }
+  .card-list {
+    margin-top: 5em;
+    margin-bottom: 0em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-holder {
+    margin: 23px 40px;
+    width: 230px;
+  }
+
+  nav {
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+  }
+  nav input {
+    padding: 1.2em;
+    margin: 0px 1.4em 0px 7px;
+    width: 120px;
+    background-color: rgb(244, 244, 244);
+    height: 18px;
+  }
+  .nav-toogle {
+    margin-left: 40px;
+  }
+
+  li {
+    margin: 0em 0.2em;
+  }
+
+  nav ul {
+    margin: 4px;
+    padding: 0px 10px;
+  }
+  .wrapper {
+    position: static;
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  .settings i {
+    margin-right: 0.1em;
+  }
+  table {
+    border-collapse: collapse;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    width: 950px;
+  }
+  .intro {
+    overflow-x: scroll;
+    padding: 20px;
+    background-color: white;
+    width: 100vw;
+    margin-top: 3em;
+  }
+  .intro h2 {
+    margin-bottom: 1.8em;
+    cursor: pointer;
+  }
+
+  table button {
+    font-size: 0.81em;
+    color: white;
+    background-color: rgb(42, 80, 80);
+    outline: none;
+    border: none;
+    padding: 0.2em 0.5em;
+    border-radius: 30px;
+  }
+
+  thead {
+    background-color: rgb(244, 244, 244);
+  }
+
+  th,
+  td {
+    width: 200px;
+    padding: 1.3em 2em;
+    text-align: start;
+  }
+}
